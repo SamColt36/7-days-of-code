@@ -1,0 +1,6 @@
+pra instalar pela primeira vez:
+npm install -D tailwindcss
+npx tailwindcss init
+ajeitar content do arquivo tailwind.config.js
+criar arquivo css com components, base e utilities
+npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch
