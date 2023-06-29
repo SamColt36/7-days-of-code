@@ -9,41 +9,31 @@
 	<meta name="keywords" content="html, css, Github, vscode, layout, tailwindcss">
 	<meta name="description" content="Desafio de código Girl Coding">
 	<link rel="stylesheet" href="/src/css/output.css">
+	<link rel="stylesheet" href="/src/css/style.css">
 	<link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
 	<title>OptimusTech</title>
 	<link rel="icon" type="png" href="favicon.png">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
-<body>
+<body class="font-default">
 	<header>
-		<div>
-			<div>
-				<figure>
-					<img src="favicon.png" alt="">
-					<p>OptimusTech</p>
-				</figure>
+		<div class="flex w-full h-20">
+			<div class="flex items-center justify-center basis-1/4">
+				<img src="favicon.png" alt="" class="h-7 mx-2">
+				<p class="h-6">OptimusTech</p>
 			</div>
-			<div>
-				<ul>
-					<li>
-						<a href="">Home</a>
-					</li>
-					<li>
-						<a href="">Produtos</a>
-					</li>
-					<li>
-						<a href="">Recursos</a>
-					</li>
-					<li>
-						<a href="">Sobre nós</a>
-					</li>
-				</ul>
 
-				<div>
-					<p>Entrar</p>
-					<p>Cadastrar</p>
-				</div>
+			<div class="flex items-center justify-start space-x-10 basis-1/2">
+				<a href="" class="text-header">Home</a>
+				<a href="" class="text-header">Produtos</a>
+				<a href="" class="text-header">Recursos</a>
+				<a href="" class="text-header">Sobre nós</a>
+			</div>
+
+			<div class="flex items-center justify-center space-x-10 basis-1/4">
+				<p class="text-header">Entrar</p>
+				<p class="text-white bg-amber-800">Cadastrar</p>
 			</div>
 		</div>
 	</header>
