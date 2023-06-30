@@ -36,11 +36,14 @@
 }
 
 #checkbox-mobile:checked+label+.content {
+	transition: .5s ease-in-out;
 	transform: translateX(0);
 }
 
 #checkbox-mobile:checked+label>svg {
 	color: white;
+	transition-delay: .2s;
+	transition: all .3s ease-in-out;
 	transform: rotate(90deg);
 }
 
@@ -48,7 +51,7 @@
 
 /*	Class do botão login desktop*/
 .cor-saturada {
-	background-color: rgb(67,20,7);
+	background-color: rgb(67, 20, 7);
 	color: white;
 	transition: all .3s ease-in-out;
 }
