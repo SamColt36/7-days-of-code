@@ -1,13 +1,16 @@
-let btnCadastrar = document.querySelector('#btnCadastrar');
-let containerBtnCadastrar = document.querySelector('#container-btnCadastrar');
+let btnCadastrar = document.querySelectorAll('.btnCadastrar');
+let containerBtnCadastrar = document.querySelectorAll('.container-btnCadastrar');
 
 btnCadastrar.addEventListener('mouseover', function () {
-	btnCadastrar.classList.remove('text-black')
-	containerBtnCadastrar.classList.remove('bg-orange-900/20')
-	containerBtnCadastrar.classList.add('cor-saturada')
+	for(let i = 0; i < btnCadastrar.length; i++) {
+		btnCadastrar[i].classList.remove('text-black')
+		containerBtnCadastrar[i].classList.remove('bg-orange-900/20')
+		containerBtnCadastrar[i].classList.add('cor-saturada')
+	}
 });
 btnCadastrar.addEventListener('mouseout', function () {
-	containerBtnCadastrar.classList.remove('cor-saturada')
-	containerBtnCadastrar.classList.add('bg-orange-900/20')
-
+	for (let i = 0; i < BtnCadastrar.length; i++) {
+		containerBtnCadastrar[i].classList.remove('cor-saturada')
+		containerBtnCadastrar[i].classList.add('bg-orange-900/20')
+	}
 });
