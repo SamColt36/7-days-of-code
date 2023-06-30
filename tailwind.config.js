@@ -18,7 +18,7 @@ module.exports = {
       },
       colors: {
         header: "#667085",
-        ambar: "#8E2424"
+        amber: "#8E2424"
       },
     },
   },

@@ -3,3 +3,52 @@
 .font-default {
 	font-family: 'Roboto', sans-serif;
 }
+
+.nav-links a {
+	position: relative;
+	transition: color .5s;
+}
+
+.nav-links a:after {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	transform: translateY(-100%);
+	background: linear-gradient(90deg, rgba(142, 36, 36, .2) 0%, rgba(158, 38, 38, .5) 35%, rgba(109, 28, 28, 1) 100%);
+	transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+	width: 50%;
+}
+
+/*	MENU SANDWISH	*/
+.content {
+	transform: translateX(-100vw);
+}
+
+#checkbox-mobile:checked~html,
+#checkbox-mobile:checked~body {
+	overflow: hidden;
+}
+
+#checkbox-mobile:checked+label+.content {
+	transform: translateX(0);
+}
+
+#checkbox-mobile:checked+label>svg {
+	color: white;
+	transform: rotate(90deg);
+}
+
+/*	/MENU SANDWISH	*/
+
+/*	Class do botão login desktop*/
+.cor-saturada {
+	background-color: rgb(67,20,7);
+	color: white;
+	transition: all .3s ease-in-out;
+}

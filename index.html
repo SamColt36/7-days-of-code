@@ -16,25 +16,59 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
-<body class="font-default">
-	<header>
-		<div class="flex w-full h-20">
-			<div class="flex items-center justify-center basis-1/4">
+<body class="font-default bg-gray-50">
+	<header class="text-sm">
+		<div class="flex items-center justify-around w-full h-20 sm:justify-left md:justify-left">
+			<!--Menu sandwich / SOMENTE MOBILE-->
+			<input type="checkbox" name="checkbox-mobile" id="checkbox-mobile" class="hidden">
+
+			<label for="checkbox-mobile" class="hidden sm:block md:block px-4 z-40 h-full">
+				<svg class="relaive text-black h-full transition-transform ease-in-out duration-700" id="svg" width="30"
+					height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+					stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" />
+					<line x1="4" y1="6" x2="20" y2="6" />
+					<line x1="4" y1="12" x2="20" y2="12" />
+					<line x1="4" y1="18" x2="20" y2="18" />
+				</svg>
+			</label>
+			<!--/Menu sandwich / SOMENTE MOBILE-->
+
+			<!--Menu oculto / SOMENTE MOBILE-->
+			<div
+				class="content pt-20 bg-black/90 w-full h-screen flex flex-col items-start fixed top-0 right-0 text-white/75 text-base space-y-2 transition-transform ease-in-out duration-700 z-30">
+				<a href="" class="hover:text-white px-5">Home</a>
+				<a href="" class="hover:text-white px-5">Produtos</a>
+				<a href="" class="hover:text-white px-5">Recursos</a>
+				<a href="" class="hover:text-white px-5">Sobre nós</a>
+				<div class="flex items-center justify-center space-x-5 w-full h-1/2">
+					<a href="" class="text-header">Entrar</a>
+					<a href="" class="text-white bg-amber rounded-full px-5 py-2.5 drop-shadow-md">Cadastrar</a>
+				</div>
+			</div>
+			<!--/Menu oculto / SOMENTE MOBILE-->
+
+			<!--Container logo + Tipografia-->
+			<div class="flex items-center justify-center">
 				<img src="favicon.png" alt="" class="h-7 mx-2">
-				<p class="h-6">OptimusTech</p>
+				<p class="h-6 font-medium leading-7">OptimusTech</p>
 			</div>
+			<!--/Container logo + Tipografia-->
 
-			<div class="flex items-center justify-start space-x-10 basis-1/2">
-				<a href="" class="text-header">Home</a>
-				<a href="" class="text-header">Produtos</a>
-				<a href="" class="text-header">Recursos</a>
-				<a href="" class="text-header">Sobre nós</a>
+			<!--Menu desktop-->
+			<div class="nav-links flex items-center justify-start space-x-10 sm:hidden md:hidden">
+				<a href="" class="text-header hover:text-black">Home</a>
+				<a href="" class="text-header hover:text-black">Produtos</a>
+				<a href="" class="text-header hover:text-black">Recursos</a>
+				<a href="" class="text-header hover:text-black">Sobre nós</a>
 			</div>
+			<div
+				class="flex items-center justify-center rounded-full bg-orange-900/20 sm:hidden md:hidden md:space-x-5" id="container-btnCadastrar">
+				<a href="" class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
+				<a href="" class="text-black pr-4 pl-2 py-2" id="btnCadastrar">Cadastrar</a>
+			</div>
+			<!--Menu desktop-->
 
-			<div class="flex items-center justify-center space-x-10 basis-1/4">
-				<p class="text-header">Entrar</p>
-				<p class="text-white bg-amber-800">Cadastrar</p>
-			</div>
 		</div>
 	</header>
 
