@@ -17,10 +17,9 @@
 </head>
 
 <body class="font-default bg-gray-50">
-	<header class="flex items-center justify-around max-w-6xl h-20 sm:justify-start md:justify-start mx-auto">
+	<nav class="flex items-center justify-around max-w-6xl h-20 sm:justify-start md:justify-start mx-auto">
 		<!--Menu sandwich / SOMENTE MOBILE-->
 		<input type="checkbox" name="checkbox-mobile" id="checkbox-mobile" class="hidden">
-
 		<label for="checkbox-mobile" class="hidden sm:block md:block sm:px-5 md:px-5 z-40 h-full">
 			<svg class="relative text-black h-full transition-all ease-in-out duration-700" id="svg" width="30"
 				height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -32,7 +31,6 @@
 			</svg>
 		</label>
 		<!--/Menu sandwich / SOMENTE MOBILE-->
-
 		<!--Menu oculto / SOMENTE MOBILE-->
 		<div
 			class="content pt-20 bg-black/90 w-full h-screen flex flex-col items-start justify-start fixed top-0 right-0 text-white/75 text-lg space-y-2 transition-transform ease-in-out duration-700 z-30">
@@ -51,14 +49,12 @@
 			</div>
 		</div>
 		<!--/Menu oculto / SOMENTE MOBILE-->
-
 		<!--Container logo + Tipografia-->
-		<div class="flex items-center justify-center">
-			<img src="favicon.png" alt="" class="h-7 mx-2">
-			<p class="h-6 font-medium leading-7 sm:text-lg md:text-lg">OptimusTech</p>
+		<div class="flex items-center justify-center leading-7">
+			<img src="favicon.png" alt="" class="h-8  mx-2">
+			<p class="font-medium sm:text-lg md:text-lg">OptimusTech</p>
 		</div>
 		<!--/Container logo + Tipografia-->
-
 		<!--Menu desktop-->
 		<div class="nav-links flex items-center justify-start space-x-10 sm:hidden md:hidden">
 			<a href="" class="text-header hover:text-black">Home</a>
@@ -67,13 +63,48 @@
 			<a href="" class="text-header hover:text-black">Sobre nós</a>
 		</div>
 		<div
-			class="flex items-center justify-center rounded-full bg-orange-900/20 sm:hidden md:hidden md:space-x-5 container-btnCadastrar">
+			class="flex items-center justify-center rounded-full bg-orange-900/10 sm:hidden md:hidden md:space-x-5 container-btnCadastrar">
 			<a href=""
 				class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
 			<a href="" class="text-black pr-4 pl-2 py-2 btnCadastrar">Cadastrar</a>
 		</div>
 		<!--Menu desktop-->
+	</nav>
+
+	<!--DEFINIÇÃO DE SM:PX-4 E MD:PX-4 NOS CONTAINERS-->
+	<header class="text-center flex justify-center items-center flex-col py-24 sm:py-16 sm:px-4 md:py-16 md:px-4">
+		<p class="text-amber text-base leading-6 font-medium">Sobre nós</p>
+		<h1 class="font-semibold text-4xl px-8 my-9 sm:px-0 md:px-0">Por que somos diferentes?</h1>
+		<h2 class="max-w-3xl text-gray-500 text-xl lg:max-w-xl" id="orphans">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</h2>
 	</header>
+
+	<div class="pb-24 flex justify-center space-x-8">
+		<div>
+			<h3 class="text-7xl	text-amber font-semibold">400+</h3>
+			<p class="text-lg text-gray-900 font-medium">Projetos concluídos</p>
+			<p class="text-base text-gray-500 w-64">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+		</div>
+		<div>
+			<h3 class="text-7xl	text-amber font-semibold">100+</h3>
+			<p class="text-lg text-gray-900 font-medium">Colaboradores</p>
+			<p class="text-base text-gray-500 w-64">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+		</div>
+		<div>
+			<h3 class="text-7xl	text-amber font-semibold">20k</h3>
+			<p class="text-lg text-gray-900 font-medium">Downloads</p>
+			<p class="text-base text-gray-500 w-64">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+		</div>
+		<div>
+			<h3 class="text-7xl	text-amber font-semibold">500+</h3>
+			<p class="text-lg text-gray-900 font-medium">Reviews 5 estrelas</p>
+			<p class="text-base text-gray-500 w-64">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+		</div>
+	</div>
+
+
+
+
+
 
 	<!--Script pessoal-->
 	<script src="./src/js/script.js"></script>
