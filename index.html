@@ -16,64 +16,71 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
-<body class="font-default bg-gray-50">
-	<header class="text-sm">
-		<div class="flex items-center justify-around w-full h-20 sm:justify-start md:justify-start">
-			<!--Menu sandwich / SOMENTE MOBILE-->
-			<input type="checkbox" name="checkbox-mobile" id="checkbox-mobile" class="hidden">
-
-			<label for="checkbox-mobile" class="hidden sm:block md:block sm:px-5 md:px-5 z-40 h-full">
-				<svg class="relative text-black h-full transition-all ease-in-out duration-700" id="svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-					stroke-linecap="round" stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" />
-					<line x1="4" y1="6" x2="20" y2="6" />
-					<line x1="4" y1="12" x2="20" y2="12" />
-					<line x1="4" y1="18" x2="20" y2="18" />
-				</svg>
-			</label>
-			<!--/Menu sandwich / SOMENTE MOBILE-->
-
-			<!--Menu oculto / SOMENTE MOBILE-->
-			<div
-				class="content pt-20 bg-black/90 w-full h-screen flex flex-col items-start justify-start fixed top-0 right-0 text-white/75 text-lg space-y-2 transition-transform ease-in-out duration-700 z-30">
-				<a href="" class="hover:text-white px-6">Home</a>
-				<a href="" class="hover:text-white px-6">Produtos</a>
-				<a href="" class="hover:text-white px-6">Recursos</a>
-				<a href="" class="hover:text-white px-6">Sobre nós</a>
-				<div class="absolute bottom-0  py-5 left-1/2 -translate-x-1/2 text-lg">
-					<div class="flex  items-center justify-center rounded-full bg-orange-900/20 space-x-5 container-btnCadastrar">
-						<a href="" class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
-						<a href="" class="pr-3 pl-2 py-2 btnCadastrar">Cadastrar</a>
+<body class="font-default bg-gray-50 max-w-6xl">
+	<div class="flex justify-center">
+		<header class="text-sm bg-blue-300">
+			<div class="flex items-center justify-around w-full h-20 sm:justify-start md:justify-start">
+				<!--Menu sandwich / SOMENTE MOBILE-->
+				<input type="checkbox" name="checkbox-mobile" id="checkbox-mobile" class="hidden">
+		
+				<label for="checkbox-mobile" class="hidden sm:block md:block sm:px-5 md:px-5 z-40 h-full">
+					<svg class="relative text-black h-full transition-all ease-in-out duration-700" id="svg" width="30"
+						height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" />
+						<line x1="4" y1="6" x2="20" y2="6" />
+						<line x1="4" y1="12" x2="20" y2="12" />
+						<line x1="4" y1="18" x2="20" y2="18" />
+					</svg>
+				</label>
+				<!--/Menu sandwich / SOMENTE MOBILE-->
+		
+				<!--Menu oculto / SOMENTE MOBILE-->
+				<div
+					class="content pt-20 bg-black/90 w-full h-screen flex flex-col items-start justify-start fixed top-0 right-0 text-white/75 text-lg space-y-2 transition-transform ease-in-out duration-700 z-30">
+					<a href="" class="hover:text-white px-6">Home</a>
+					<a href="" class="hover:text-white px-6">Produtos</a>
+					<a href="" class="hover:text-white px-6">Recursos</a>
+					<a href="" class="hover:text-white px-6">Sobre nós</a>
+					<div class="absolute bottom-0  py-5 left-1/2 -translate-x-1/2 text-lg">
+						<div
+							class="flex  items-center justify-center rounded-full bg-orange-900/20 space-x-5 container-btnCadastrar">
+							<a href=""
+								class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
+							<a href="" class="py-2 pr-7 btnCadastrar">Cadastrar</a>
+						</div>
+						<p class="w-full text-center my-3">v.6.23</p>
 					</div>
-					<p class="w-full text-center my-3">v.6.23</p>
 				</div>
+				<!--/Menu oculto / SOMENTE MOBILE-->
+		
+				<!--Container logo + Tipografia-->
+				<div class="flex items-center justify-center">
+					<img src="favicon.png" alt="" class="h-7 mx-2">
+					<p class="h-6 font-medium leading-7 sm:text-lg md:text-lg">OptimusTech</p>
+				</div>
+				<!--/Container logo + Tipografia-->
+		
+				<!--Menu desktop-->
+				<div class="nav-links flex items-center justify-start space-x-10 sm:hidden md:hidden">
+					<a href="" class="text-header hover:text-black">Home</a>
+					<a href="" class="text-header hover:text-black">Produtos</a>
+					<a href="" class="text-header hover:text-black">Recursos</a>
+					<a href="" class="text-header hover:text-black">Sobre nós</a>
+				</div>
+				<div
+					class="flex items-center justify-center rounded-full bg-orange-900/20 sm:hidden md:hidden md:space-x-5 container-btnCadastrar">
+					<a href=""
+						class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
+					<a href="" class="text-black pr-4 pl-2 py-2 btnCadastrar">Cadastrar</a>
+				</div>
+				<!--Menu desktop-->
+		
 			</div>
-			<!--/Menu oculto / SOMENTE MOBILE-->
+		</header>
+	</div>
 
-			<!--Container logo + Tipografia-->
-			<div class="flex items-center justify-center">
-				<img src="favicon.png" alt="" class="h-7 mx-2">
-				<p class="h-6 font-medium leading-7 sm:text-lg md:text-lg">OptimusTech</p>
-			</div>
-			<!--/Container logo + Tipografia-->
-
-			<!--Menu desktop-->
-			<div class="nav-links flex items-center justify-start space-x-10 sm:hidden md:hidden">
-				<a href="" class="text-header hover:text-black">Home</a>
-				<a href="" class="text-header hover:text-black">Produtos</a>
-				<a href="" class="text-header hover:text-black">Recursos</a>
-				<a href="" class="text-header hover:text-black">Sobre nós</a>
-			</div>
-			<div class="flex items-center justify-center rounded-full bg-orange-900/20 sm:hidden md:hidden md:space-x-5 container-btnCadastrar">
-				<a href="" class="text-white bg-amber hover:bg-orange-950 rounded-full px-7 py-2 transition duration-700">Entrar</a>
-				<a href="" class="text-black pr-4 pl-2 py-2 btnCadastrar">Cadastrar</a>
-			</div>
-			<!--Menu desktop-->
-
-		</div>
-	</header>
-
-
+	<!--Script pessoal-->
 	<script src="./src/js/script.js"></script>
 </body>
 

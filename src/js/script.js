@@ -1,16 +1,19 @@
 let btnCadastrar = document.querySelectorAll('.btnCadastrar');
 let containerBtnCadastrar = document.querySelectorAll('.container-btnCadastrar');
 
-btnCadastrar.addEventListener('mouseover', function () {
-	for(let i = 0; i < btnCadastrar.length; i++) {
-		btnCadastrar[i].classList.remove('text-black')
-		containerBtnCadastrar[i].classList.remove('bg-orange-900/20')
-		containerBtnCadastrar[i].classList.add('cor-saturada')
-	}
-});
-btnCadastrar.addEventListener('mouseout', function () {
-	for (let i = 0; i < BtnCadastrar.length; i++) {
-		containerBtnCadastrar[i].classList.remove('cor-saturada')
-		containerBtnCadastrar[i].classList.add('bg-orange-900/20')
-	}
-});
+for (let i = 0; i < btnCadastrar.length; i++) {
+	btnCadastrar[i].addEventListener('mouseover', function () {
+		btnCadastrar[i].classList.remove('text-black');
+		for (let j = 0; j < containerBtnCadastrar.length; j++) {
+			containerBtnCadastrar[j].classList.remove('bg-orange-900/20');
+			containerBtnCadastrar[j].classList.add('cor-saturada');
+		}
+	});
+
+	btnCadastrar[i].addEventListener('mouseout', function () {
+		for (let j = 0; j < containerBtnCadastrar.length; j++) {
+			containerBtnCadastrar[j].classList.remove('cor-saturada');
+			containerBtnCadastrar[j].classList.add('bg-orange-900/20');
+		}
+	});
+}
