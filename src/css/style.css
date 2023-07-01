@@ -4,13 +4,6 @@
 	font-family: 'Roboto', sans-serif;
 }
 
-#indicator {
-	background-color: red;
-	height: .35rem;
-	width: 0;
-	position: fixed;
-	top: 0;
-}
 .nav-links a {
 	position: relative;
 	transition: color .5s;
@@ -67,4 +60,7 @@
 #orphans {
 	/* A propriedade orphans define o número mínimo de linhas*/
 	orphans: 5;
+}
+#orphans-par {
+	orphans: 2;
 }

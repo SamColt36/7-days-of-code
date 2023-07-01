@@ -558,6 +558,18 @@ video {
   z-index: 40;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -619,6 +631,14 @@ video {
   height: 25rem;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -637,6 +657,10 @@ video {
 
 .w-\[48rem\] {
   width: 48rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-3xl {
@@ -774,6 +798,12 @@ video {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -832,6 +862,10 @@ video {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
+.bg-orange-900\/5 {
+  background-color: rgb(124 45 18 / 0.05);
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -849,6 +883,14 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-64 {
+  padding: 16rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .px-6 {
@@ -991,6 +1033,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[44px\] {
+  font-size: 44px;
 }
 
 .font-medium {
@@ -1186,13 +1232,27 @@ video {
     padding-right: 0.25rem;
   }
 
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:text-justify {
+    text-align: justify;
   }
 
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1286,9 +1346,18 @@ video {
     text-align: center;
   }
 
+  .md\:text-justify {
+    text-align: justify;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1397,5 +1466,10 @@ video {
 
   .lg\:text-center {
     text-align: center;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
