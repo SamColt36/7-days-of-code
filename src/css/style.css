@@ -30,6 +30,10 @@
 	transform: translateX(-100vw);
 }
 
+.overflow-hidden {
+	overflow-y: hidden;
+}
+
 #checkbox-mobile:checked+label+.content {
 	transition: .5s ease-in-out;
 	transform: translateX(0);
@@ -56,6 +60,7 @@
 	/* A propriedade orphans define o número mínimo de linhas*/
 	orphans: 5;
 }
+
 #orphans-par {
 	orphans: 2;
 }
