@@ -28,3 +28,5 @@ checkboxMobile.addEventListener('change', function () {
 		body.classList.remove('overflow-hidden');
 	}
 });
+
+document.getElementById('email').classList.add('placeholder')
