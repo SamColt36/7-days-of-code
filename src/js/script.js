@@ -1,5 +1,5 @@
-let btnCadastrar = document.querySelectorAll('#btnCadastrar');
-let containerBtnCadastrar = document.querySelectorAll('#container-btnCadastrar');
+let btnCadastrar = document.querySelectorAll('.btnCadastrar');
+let containerBtnCadastrar = document.querySelectorAll('.container-btnCadastrar');
 
 for (let i = 0; i < btnCadastrar.length; i++) {
 	btnCadastrar[i].addEventListener('mouseover', function () {
@@ -30,3 +30,4 @@ checkboxMobile.addEventListener('change', function () {
 });
 
 document.getElementById('email').classList.add('placeholder')
+
