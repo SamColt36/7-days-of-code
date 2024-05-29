@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.font-default {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-links a {
+  position: relative;
+  transition: color 0.5s;
+}
+
+.nav-links a:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 36, 36, 0.2) 0%,
+    rgba(158, 38, 38, 0.5) 35%,
+    rgba(109, 28, 28, 1) 100%
+  );
+  transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 50%;
+}
+
+
+.content {
+  transform: translateX(-100vw);
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
+.placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+#checkbox-mobile:checked + label + .content {
+  transition: 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+#checkbox-mobile:checked + label > svg {
+  color: white;
+  transition-delay: 0.2s;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.cor-saturada {
+  background-color: rgb(67, 20, 7);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#orphans {
+  orphans: 5;
+}
+
+#orphans-par {
+  orphans: 2;
+}
